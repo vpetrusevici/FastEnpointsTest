@@ -12,7 +12,7 @@
         public List<string> Authors { get; init; } = new List<string>();
         public string BaseLinkUrl { get; init; } = null!;
         public bool SendNotification { get; init; }
-        public ArticleMetaInfoDto ArticleMetaInfo { get; init; } = null!;
+        public List<ArticleMetaInfoDto> ArticleMetaInfo { get; init; } = null!;
 
     }
 

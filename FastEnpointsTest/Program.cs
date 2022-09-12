@@ -12,7 +12,8 @@ services.AddSwaggerDoc(c =>
 {
     c.DocumentName = "openapi";
 },
-shortSchemaNames: true);
+shortSchemaNames: true,
+removeEmptySchemas: true);
 
 var app = builder.Build();
 
