@@ -8,7 +8,7 @@ namespace FastEnpointsTest
         public string? Id { get; init; }
         public string LocaleName { get; init; } = null!;
         [FromBody]
-        public List<string> Article { get; init; } = null!;
+        public ArticleAddDto Article { get; init; } = null!;
 
     }
 }
