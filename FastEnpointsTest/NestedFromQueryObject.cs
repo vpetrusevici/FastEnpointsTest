@@ -5,6 +5,6 @@
         public string? NestedId { get; init; }
         public int? NestedCount { get; init; }
         public string? NestedPony { get; init; }
-        public MoreNestedFromQueryObject SecondChild { get; init; } = null!;
+        public List<string> SecondChilds { get; init; } = null!;
     }
 }
