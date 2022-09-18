@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
@@ -7,15 +7,18 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="FastEndpoints" Version="5.2.0-beta4" />
-		<PackageReference Include="FastEndpoints.Swagger" Version="5.2.0-beta4" />
 		<PackageReference Include="NSwag.MSBuild" Version="13.16.1">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
 	</ItemGroup>
-	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\FastEndpoints\Src\Library\FastEndpoints.csproj" />
+	  <ProjectReference Include="..\..\FastEndpoints\Src\Swagger\FastEndpoints.Swagger.csproj" />
+	</ItemGroup>
+	<!--<Target Name="PostBuild" AfterTargets="PostBuildEvent">
 		<Exec WorkingDirectory="$(ProjectDir)" Command="$(NSwagExe_Net60) run nswag.json" />
-	</Target>
+	</Target>-->
 
 </Project>

@@ -4,8 +4,8 @@ namespace FastEnpointsTest
 {
     public class AddArticleRequest
     {
-        [QueryParam]
-        public string? Id { get; init; }
+        [FromQueryParams]
+        public FromQueryObject? Query { get; init; }
         public string LocaleName { get; init; } = null!;
         [FromBody]
         public ArticleAddDto Article { get; init; } = null!;
