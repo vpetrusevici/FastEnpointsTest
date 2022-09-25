@@ -15,7 +15,7 @@ namespace FastEnpointsTest
         { }
     }
 
-    public class AnotherGetArticleEndpoint : Endpoint<GetAnotherArticleRequest, string>
+    public class AnotherGetArticleEndpoint : Endpoint<PaginationFilterWithTextAndSort<AdminArticlesSortColumn>, string>
     {
 
         public override void Configure()
@@ -24,7 +24,7 @@ namespace FastEnpointsTest
             AllowAnonymous();
         }
 
-        public override async Task HandleAsync(GetAnotherArticleRequest request, CancellationToken cancellationToken)
+        public override async Task HandleAsync(PaginationFilterWithTextAndSort<AdminArticlesSortColumn> request, CancellationToken cancellationToken)
         { }
     }
 }
