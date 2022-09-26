@@ -5,10 +5,6 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastEnpointsTest", "FastEnpointsTest\FastEnpointsTest.csproj", "{F5734648-2899-4CFF-8303-414BF17BBCFB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastEndpoints", "..\FastEndpoints\Src\Library\FastEndpoints.csproj", "{F55338D9-2AA8-469A-A0DA-7748490908F8}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastEndpoints.Swagger", "..\FastEndpoints\Src\Swagger\FastEndpoints.Swagger.csproj", "{7320318D-B5E4-4EFB-8394-F88AE0F39B21}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,14 +15,6 @@ Global
 		{F5734648-2899-4CFF-8303-414BF17BBCFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5734648-2899-4CFF-8303-414BF17BBCFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5734648-2899-4CFF-8303-414BF17BBCFB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F55338D9-2AA8-469A-A0DA-7748490908F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F55338D9-2AA8-469A-A0DA-7748490908F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F55338D9-2AA8-469A-A0DA-7748490908F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F55338D9-2AA8-469A-A0DA-7748490908F8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7320318D-B5E4-4EFB-8394-F88AE0F39B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7320318D-B5E4-4EFB-8394-F88AE0F39B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7320318D-B5E4-4EFB-8394-F88AE0F39B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7320318D-B5E4-4EFB-8394-F88AE0F39B21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

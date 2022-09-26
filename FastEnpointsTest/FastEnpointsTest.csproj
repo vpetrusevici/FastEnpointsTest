@@ -7,15 +7,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="FastEndpoints.Swagger" Version="5.2.0-beta20" />
 		<PackageReference Include="NSwag.MSBuild" Version="13.16.1">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <ProjectReference Include="..\..\FastEndpoints\Src\Library\FastEndpoints.csproj" />
-	  <ProjectReference Include="..\..\FastEndpoints\Src\Swagger\FastEndpoints.Swagger.csproj" />
 	</ItemGroup>
 	<!--<Target Name="PostBuild" AfterTargets="PostBuildEvent">
 		<Exec WorkingDirectory="$(ProjectDir)" Command="$(NSwagExe_Net60) run nswag.json" />
